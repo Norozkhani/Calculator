@@ -13,7 +13,6 @@ html {
 
 body {
   align-items: center;
-  background: linear-gradient(320deg, #eb92be, #ffef78, #63c9b4);
   display: flex;
   font-family: "Dosis", sans-serif;
   font-display: swap;
@@ -34,6 +33,7 @@ body {
   flex-basis: 400px;
   height: 540px;
   padding: 20px 35px;
+  z-index: 1;
 }
 
 .screen {
@@ -101,4 +101,21 @@ body {
 
 .triple {
   flex-basis: 73%;
+}
+/* ---- reset ---- */
+
+canvas {
+  display: block;
+  vertical-align: bottom;
+  background: linear-gradient(320deg, #eb92be, #ffef78, #63c9b4);
+} /* ---- particles.js container ---- */
+#particles-js {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+
+  background-image: url("");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
 }
